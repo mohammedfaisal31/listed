@@ -16,7 +16,7 @@ export default function CardsSection() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://kisargo.ml/api/randomNumber');
+        const response = await axios.get('https://kisargo.ml/api/randomNumber');
         const randomNumber = response.data.number;
 
         const sixDigits = Math.floor(Math.random() * 900000) + 100000;
