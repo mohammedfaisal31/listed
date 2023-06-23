@@ -11,10 +11,10 @@ export default function ChartSection() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response1 = await axios.get('http://kisargo.ml/api/randomNumber');
+        const response1 = await axios.get('https://kisargo.ml/api/randomNumber');
         const randomNumber1 = response1.data.number;
 
-        const response2 = await axios.get('http://kisargo.ml/api/randomNumber');
+        const response2 = await axios.get('https://kisargo.ml/api/randomNumber');
         const randomNumber2 = response2.data.number;
         // Generate a list of four random numbers
         const randomNumbersList1 = Array.from({ length: 4 }, () => Math.floor(Math.random() * 100));
